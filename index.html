@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script type='text/javascript' src='//samp-rating.ru/web/api/17748/'></script>
+    <script>
+        window.fetch('https://api.gamemonitoring.net/servers/1030410')
+        .then((response) => response.json())
+        .then((data) => {
+            document.querySelector(".onlinePlayer").innerHTML = data.response.numplayers + '/' + '150';
+        })
+    </script>
+</head>
+
+<body>
+    
+    <div class="serverInfo-playerInfo__row">
+
+        <div class="background__serverInfo">
+            <h1>Informati<span>on</span></h1>
+
+            <div class="serverInfo__time server-data">
+                <img src="./image/time.png" alt="time">
+                <h1>21:21</h1>
+            </div>
+            <div class="serverInfo__calendar server-data">
+                <img src="./image/calendar.png" alt="calendar">
+                <h1>26.06.2009</h1>
+            </div>
+            <div class="serverInfo__online server-data">
+                <img src="./image/user.png" alt="user">
+                <h1 class="onlinePlayer"></h1>
+            </div>
+        </div>
+
+
+        <div class="background__playerInfo">
+            <h1>Kumayri <span>Role Play</span></h1>
+
+            <div class="playerInfo__params">
+                <div class="playerInfo__params__heal radius-progress">
+                    <div class="playerInfo__params__heal__radius radius">
+                        <div class="playerInfo__params__heal__progress progress"></div>
+                    </div>
+                    <img src="./image/heart.png" alt="heart">
+                </div>
+
+                <div class="playerInfo__params__armor radius-progress">
+                    <div class="playerInfo__params__armor__radius radius">
+                        <div class="playerInfo__params__armor__progress progress">
+
+                        </div>
+                    </div>
+                    <img src="./image/armor.png" alt="heart">
+                </div>
+
+                <div class="playerInfo__params__eat radius-progress">
+                    <div class="playerInfo__params__eat__radius radius">
+                        <div class="playerInfo__params__eat__progress progress">
+
+                        </div>
+                    </div>
+                    <img src="./image/chicken.png" alt="heart">
+                </div>
+            </div>
+
+            <div class="playerInfo__info">
+                <div class="playerInfo__info__gun">
+                    <img class="gunUse" src="./image/guns/0.png" alt="gun">
+                </div>
+                <div class="playerInfo__info__countsGun">
+                    <span><span class="gunCount">1</span>/<span class="gunCountMax">10000</span></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="userSearch-userMoney__row">
+        <div class="background__userSearch">
+            <img src="./image/star-none.png" alt="start" class="star1">
+            <img src="./image/star-none.png" alt="start" class="star2">
+            <img src="./image/star-none.png" alt="start" class="star3">
+            <img src="./image/star-none.png" alt="start" class="star4">
+            <img src="./image/star-none.png" alt="start" class="star5">
+            <img src="./image/star-none.png" alt="start" class="star6">
+        </div>
+
+        <div class="background__userMoney">
+            <img src="./image/dram.png" alt="money">
+            <span class="moneyCount">10000000000</span>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+    
+</body>
+
+</html>
+
