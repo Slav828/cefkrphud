@@ -15,14 +15,14 @@ cef.on("game:hud:newVisibleState", (success) => {
 cef.emit("game:data:pollPlayerStats", true, 50);
 cef.on("game:data:playerStats", (hp, max_hp, arm, breath, wanted, weapon, ammo, max_ammo, money, speed) => {
     health.style.width = hp + '%';
-    health.style.radius = max_hp + '%';
+    health.style.radius = Math.min(max_hp,100) + '%';
     armour.style.width = arm + '%';
     breath.style.width = breath + '%';
     gcnt.style.textContent = ammo;
     gcmnt.style.textContent = max_ammo;
-    pmoney.textContent = money.toLocaleString('de-DE');
+    pmoney.textContent = money;
 
-    gun.src = "/image/guns/" + weapon + ".png";
+    gun.src = "./image/guns/" + weapon + ".png";
 
     if(wanted ==0){
         for(let i = 1;i<=6;++i){
