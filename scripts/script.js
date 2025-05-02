@@ -9,13 +9,12 @@ let gun = document.querySelector(".gunUse");
 function updateArmenianDateTime() {
     const now = new Date();
 
-    
     const timeFormatter = new Intl.DateTimeFormat('hy-AM', {
         hour: '2-digit',
         minute: '2-digit',
-        second: '2-digit'
+        second: '2-digit',
+        hour12: false
     });
-
 
     const dateFormatter = new Intl.DateTimeFormat('hy-AM', {
         day: '2-digit',
