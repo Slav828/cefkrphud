@@ -20,17 +20,17 @@
 
 
 .container__body {
-    width: 50%;
+    width: 29%;
     height: 30vh;
     position: absolute;
     top: 10px;
-    left: 1450px;
+    left: 1400px;
     /* display: flex;
     justify-content: start;
     align-items: end;
     flex-direction: column; */
     /* gap: 10px; */
-    margin-top: 10px;
+    margin-top: 30px;
 
 }
 
