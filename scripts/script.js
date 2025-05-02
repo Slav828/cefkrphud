@@ -31,15 +31,14 @@ updateArmenianDateTime();
 
 
 
+
 cef.emit('pwd:cefhud');
 cef.emit("game:hud:setComponentVisible", "interface", false);
 
 
-
-
-
 cef.on('pwd:huditem', (hp, arm, hung, wanted, weapon, ammo, money) => {
-    health.style.width = (hp*1.6) + '%';
+    hp = Math.min(hp,160);
+    health.style.width = (hp*0.625) + '%';
     armour.style.width = arm + '%';
     breath.style.width = hung + '%';
     gcnt.innerText = ammo;
