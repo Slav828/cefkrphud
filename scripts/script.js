@@ -6,6 +6,30 @@ let gcnt = document.querySelector(".gunCount");
 let gcmnt = document.querySelector(".gunCountMax");
 let gun = document.querySelector(".gunUse");
 
+function updateArmenianDateTime() {
+    const now = new Date();
+
+    
+    const timeFormatter = new Intl.DateTimeFormat('hy-AM', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    });
+
+
+    const dateFormatter = new Intl.DateTimeFormat('hy-AM', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+    });
+
+    document.getElementById("time").innerText = timeFormatter.format(now);
+    document.getElementById("date").innerText = dateFormatter.format(now);
+}
+
+setInterval(updateArmenianDateTime, 1000);
+updateArmenianDateTime(); 
+
 
 cef.on("game:hud:newVisibleState", (success) => {
 	cef.hide(!success);
