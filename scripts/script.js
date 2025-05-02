@@ -7,20 +7,20 @@ let gcmnt = document.querySelector(".gunCountMax");
 let gun = document.querySelector(".gunUse");
 
 
-
 cef.on("game:hud:newVisibleState", (success) => {
 	cef.hide(!success);
 });
 
 cef.emit("game:data:pollPlayerStats", true, 50);
 cef.on("game:data:playerStats", (hp, max_hp, arm, breath, wanted, weapon, ammo, max_ammo, money, speed) => {
+    max_ammo = 50;
     health.style.width = hp + '%';
     health.style.radius = Math.min(max_hp,100) + '%';
     armour.style.width = arm + '%';
     breath.style.width = breath + '%';
-    gcnt.style.textContent = ammo;
-    gcmnt.style.textContent = max_ammo;
-    pmoney.innerHTML = money;
+    gcnt.innerText = ammo;
+    gcmnt.innerText = max_ammo;
+    pmoney.innerText = money;
 
     gun.src = "./image/guns/" + weapon + ".png";
 
