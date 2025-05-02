@@ -31,19 +31,20 @@ setInterval(updateArmenianDateTime, 1000);
 updateArmenianDateTime(); 
 
 
-cef.on("game:hud:newVisibleState", (success) => {
-	cef.hide(!success);
-});
 
-cef.emit("game:data:pollPlayerStats", true, 50);
-cef.on("game:data:playerStats", (hp, max_hp, arm, breath, wanted, weapon, ammo, max_ammo, money, speed) => {
-    max_ammo = 50;
+cef.emit('pwd:cefhud');
+cef.emit("game:hud:setComponentVisible", "interface", false);
+
+
+
+
+
+cef.on('pwd:huditem', (hp, max_hp, arm, hung, wanted, weapon, ammo, money) => {
     health.style.width = hp + '%';
-    health.style.radius = Math.min(max_hp,100) + '%';
+    health.style.radius = max_hp + '%';
     armour.style.width = arm + '%';
-    breath.style.width = breath + '%';
+    breath.style.width = hung + '%';
     gcnt.innerText = ammo;
-    gcmnt.innerText = max_ammo;
     pmoney.innerText = money;
 
     gun.src = "./image/guns/" + weapon + ".png";
@@ -59,6 +60,5 @@ cef.on("game:data:playerStats", (hp, max_hp, arm, breath, wanted, weapon, ammo, 
             star.src = "./image/star.png";
         }
     }
-    
-    
+        
 });
