@@ -20,7 +20,7 @@ cef.on("game:data:playerStats", (hp, max_hp, arm, breath, wanted, weapon, ammo, 
     breath.style.width = breath + '%';
     gcnt.style.textContent = ammo;
     gcmnt.style.textContent = max_ammo;
-    pmoney.textContent = money;
+    pmoney.innerHTML = money;
 
     gun.src = "./image/guns/" + weapon + ".png";
 
