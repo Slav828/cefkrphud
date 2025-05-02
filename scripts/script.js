@@ -39,9 +39,8 @@ cef.emit("game:hud:setComponentVisible", "interface", false);
 
 
 
-cef.on('pwd:huditem', (hp, max_hp, arm, hung, wanted, weapon, ammo, money) => {
-    health.style.width = hp + '%';
-    health.style.radius = max_hp + '%';
+cef.on('pwd:huditem', (hp, arm, hung, wanted, weapon, ammo, money) => {
+    health.style.width = (hp*1.6) + '%';
     armour.style.width = arm + '%';
     breath.style.width = hung + '%';
     gcnt.innerText = ammo;
