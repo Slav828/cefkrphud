@@ -23,7 +23,7 @@ body{
 }
 
 .container__body {
-    /* width: 100%; */
+    width: 100%;
     height: 30vh;
     position: absolute;
     top: 10px;
