@@ -19,12 +19,10 @@ cef.on('pwd:spidometritem', (carname,carhealth,cardrived,carfuel,cardoor,carengi
     health.innerHTML=carhealth;
     drived.innerHTML=cardrived;
     fuel.innerHTML=carfuel;
-    door.innerHTML=cardoor;
-    engine.innerHTML=carengine;
-    light.innerHTML=carlight;
+    door.style.backgroundColor =(cardoor?"#53a6fa":"#53a6fa");
+    engine.style.backgroundColor =(carengine?"#53a6fa":"#53a6fa");
+    light.style.backgroundColor =(carlight?"#53a6fa":"#53a6fa");
     speed.innerHTML=carspeed;
     number.innerHTML=carnumber;
-    
- 
         
 });
