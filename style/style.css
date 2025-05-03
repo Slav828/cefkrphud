@@ -357,12 +357,9 @@ h1, h2, h3, h4, h5, h6, p, span {
         left: 260px;
     }
 }
-<<<<<<< HEAD
-=======
-
 @media (max-width: 640px) {
     .container__body {
         left: 100px;
     }
 }
->>>>>>> c50c0a442fe7d4b8a6123c724f50b01d6b931bd8
+
