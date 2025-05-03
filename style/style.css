@@ -20,7 +20,7 @@
 
 
 .container__body {
-    width: auto;
+    width: auto ;
     height: 30vh;
     position: absolute;
     top: 10px;
@@ -306,3 +306,37 @@ h1, h2, h3, h4, h5, h6, p, span {
     font-size: 20px;
     letter-spacing: 1px;
 }
+
+
+/* Media */
+@media (min-width: 1600px) {
+    .container__body {
+      transform: scale(1);
+      transform-origin: top right;
+    }
+  }
+  
+  /* 1366x768 */
+  @media (max-width: 1599px) and (min-width: 1366px) {
+    .container__body {
+      transform: scale(0.85);
+      transform-origin: top right;
+    }
+  }
+  
+  /* 1280x720 */
+  @media (max-width: 1365px) and (min-width: 1280px) {
+    .container__body {
+      transform: scale(0.75);
+      transform-origin: top right;
+    }
+  }
+  
+  /* 1024x768 и ниже */
+  @media (max-width: 1279px) {
+    .container__body {
+      transform: scale(0.65);
+      transform-origin: top right;
+    }
+  }
+  
