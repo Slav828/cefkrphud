@@ -31,7 +31,8 @@ updateArmenianDateTime();
 
 
 
-cef.emit("pwd:cefhud", true, 10);
+cef.emit("pwd:cefhud", true, 30);
+cef.emit("pwd:huditem", true, 30);
 cef.emit("game:hud:setComponentVisible", "interface", false);
 cef.on('pwd:huditem', (hp, arm, hung, wanted, weapon, ammo, money) => {
     hp = Math.min(hp,160);
