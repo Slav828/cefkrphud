@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');*
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  color: white;
+}
+.container__body{
+    /* margin-top: 42%; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 10px;
+    /* background-color: red; */
+}
+.spidometr_box{
+    padding: 5px 30px 10px 30px;
+    
+    background-color: #4b5759;
+    width: 500px;
+    height: 160px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.car_name{
+    font-size: 24px;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 1.5px;
+    left: 20%;
+}
+
+.car_state_icons{
+    margin-top: 40px;
+    width: 100px;
+    display:flex;
+
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.car_state_icons img{
+    height: 23px;
+    width: 25px;
+
+}
+
+.car_state_icons div{
+    display: flex;
+    align-items: center;
+
+}
+.car_state_icons div h2{
+    margin-left: 10px;
+    font-size: 19px;
+}
+
+
+
+.car_state_2{
+    margin-top: 40px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.car_usage{
+    display:flex;
+    margin-right: 30px;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.car_usage img{
+    width: 16px;
+    height: 16px;
+}
+
+.car_usage div{
+    background-color: #fa5353;
+    width: 30px;
+    height: 30px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.door{
+    background-color: #53a6fa !important;
+}
+
+.speed{
+    font-size: 60px;
+}
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .number-img {
+    display: block;
+    width: 130px; 
+    height: auto;
+  }
+  
+  .overlay-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;    
+    left: 80%;   
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+  }
+  
+
+
+
+@media (max-width: 1920px) {
+    .spidometr_box {
+      width: 450px;
+      height: 160px;
+    }
+    .car_name {
+      font-size: 22px;
+    }
+    .speed {
+      font-size: 50px;
+    }
+  }
+  
+
+  @media (max-width: 1366px) {
+    .spidometr_box {
+      width: 400px;
+      height: 140px;
+    }
+    .car_name {
+      font-size: 20px;
+    }
+    .speed {
+      font-size: 45px;
+    }
+  }
+  
+
+  @media (max-width: 1024px) {
+    .spidometr_box {
+      width: 360px;
+      height: 130px;
+    }
+    .car_name {
+      font-size: 18px;
+    }
+    .speed {
+      font-size: 40px;
+    }
+  }
+  
+  /* Tablet portrait */
+  @media (max-width: 800px) {
+    .spidometr_box {
+      width: 200x;
+      height: 120px;
+    }
+    .car_state_icons {
+      height: 80px;
+      margin-top: 30px;
+      /* background-color: red; */
+    }
+    .car_name {
+      font-size: 16px;
+    }
+    .speed {
+      font-size: 35px;
+    }
+
+    .car_state_icons img{
+        height: 18px;
+        width: 20px;
+
+    }
+    .car_usage img{
+        width: 10px;
+        height: 10px;
+    }
+    .car_usage div{
+        background-color: #fa5353;
+        width: 20px;
+        height: 20px;
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+    }
+    .car_state_icons div h2{
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .number-img {
+        display: block;
+        width: 100px; 
+        height: auto;
+      }
+      .overlay-text{
+        font-size: 10px;
+      }
+      .car_usage{
+        height: 70px;
+        /* background-color: red; */
+      }
+  }
+  

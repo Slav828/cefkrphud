@@ -17,15 +17,18 @@
     --white: #fff;
 }
 
-body {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-direction: column;
-    align-items: end;
-    gap: 10px;
-    padding: 20px;
+
+
+.container__body {
+    width: auto;
+    height: 30vh;
+    position: absolute;
+    top: 10px;
+    left: 1350px;
+    margin-top: 40px;
+
 }
+
 
 /* Options Tag */
 
@@ -44,8 +47,8 @@ h1, h2, h3, h4, h5, h6, p, span {
 .serverInfo-playerInfo__row {
     height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     gap: 10px;
 }
 
@@ -185,7 +188,6 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .playerInfo__params__heal__progress {
     background-color: red;
-    width: 80%;
 }
 
 /* Armor */
@@ -249,9 +251,10 @@ h1, h2, h3, h4, h5, h6, p, span {
 .userSearch-userMoney__row {
     width: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     gap: 10px;
+    margin-top: 10px;
 }
 
 /* userSearch */
@@ -300,4 +303,57 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 
+/* Media */
+  
+@media (max-width: 1680px){
+    .container__body {
+        left: 1100px;
+    }
+}
+  
+@media (max-width: 1600px){
+    .container__body {
+        left: 1050px;
+    }
+}
+  
+@media (max-width: 1440px){
+    .container__body {
+        left: 900px;
+    }
+}
 
+@media (max-width: 1400px) {
+    .container__body {
+        left: 850px;
+    }
+}
+@media (max-width: 1367px) {
+    .container__body {
+        left: 800px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container__body {
+        left: 750px;
+    }
+}
+
+@media (max-width: 1152px) {
+    .container__body {
+        left: 600px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container__body {
+        left: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container__body {
+        left: 260px;
+    }
+}

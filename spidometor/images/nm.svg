@@ -1,0 +1,11 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="931.5px" height="225.5px">
+<path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5px" stroke="rgb(0, 0, 0)" fill="rgb(255, 255, 255)"
+ d="M43.587,6.997 L887.587,6.997 C908.021,6.997 924.587,23.563 924.587,43.997 L924.587,181.997 C924.587,202.432 908.021,218.997 887.587,218.997 L43.587,218.997 C23.152,218.997 6.587,202.432 6.587,181.997 L6.587,43.997 C6.587,23.563 23.152,6.997 43.587,6.997 Z"/>
+<image  x="45.5px" y="32.5px" width="91px" height="60px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFsAAAA8CAMAAAA+GTZJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAS1BMVEXZABLhAAyqCzEAM6AAM6EAMaIKOJnXmxL4qwDyqADzqADwpwHZABLhAAyqCzEAM6AAM6EAMaIKOJnXmxL4qwDyqADzqADwpwH////c8eysAAAADHRSTlPIyMjIyMjIyMjIyNQGk2xPAAAAAWJLR0QYm2mFHgAAAAd0SU1FB+kFAxcNMzTdatoAAABXSURBVFjD7c7HDYQAAMTAJed4B/TfKVX4gWQXMHIyY0VbW1tb+5t2sWClXLFSbVipdyz0W1tbW1ubs5sDK+2Jle6Hlf6PleHC0tbW1tYG7fHGyvRgkfYLoIRZnCclgx8AAAAASUVORK5CYII=" />
+<text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 0.39131680216367, 0, 0, 0.39131680216367,50.6133667990944, 189.348616937393)" font-size="161.092px"><tspan font-size="161.092px" font-family="Impact" fill="#000000">AM</tspan></text>
+<path fill-rule="evenodd"  fill="rgb(156, 157, 149)"
+ d="M163.291,32.159 L177.291,32.159 C177.843,32.159 178.291,32.607 178.291,33.159 L178.291,188.159 C178.291,188.711 177.843,189.159 177.291,189.159 L163.291,189.159 C162.738,189.159 162.291,188.711 162.291,188.159 L162.291,33.159 C162.291,32.607 162.738,32.159 163.291,32.159 Z"/>
+</svg>
