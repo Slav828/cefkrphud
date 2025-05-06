@@ -10,15 +10,14 @@ let number = document.querySelector(".overlay-text");
 
 
 
-cef.emit('pwd:cefspidometr',true,50);
-cef.emit('pwd:spidometritem',true,50);
+cef.emit('pwd:spidometritem',true,100);
 
 
 cef.on('pwd:spidometritem', (carname,carhealth,cardrived,carfuel,cardoor,carengine,carlight,carspeed,carnumber) => {
     name.innerHTML=carname;
-    health.innerHTML=carhealth;
-    drived.innerHTML=cardrived;
-    fuel.innerHTML=carfuel;
+    health.innerHTML=Math.round(carhealth);
+    drived.innerHTML=Math.round(cardrived);
+    fuel.innerHTML=Math.round(carfuel);
     door.style.backgroundColor =(cardoor?"#53a6fa":"#53a6fa");
     engine.style.backgroundColor =(carengine?"#53a6fa":"#53a6fa");
     light.style.backgroundColor =(carlight?"#53a6fa":"#53a6fa");
