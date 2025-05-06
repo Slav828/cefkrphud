@@ -8,8 +8,6 @@ let light = document.querySelector(".light");
 let speed = document.querySelector(".speed");
 let number = document.querySelector(".overlay-text");
 
-
-
 cef.emit('pwd:spidometritem',true,100);
 
 
