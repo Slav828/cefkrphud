@@ -20,6 +20,9 @@ cef.on('pwd:spidometritem', (carname,carhealth,cardrived,carfuel,cardoor,carengi
     engine.style.backgroundColor =(carengine?"#53a6fa":"#fa5353");
     light.style.backgroundColor =(carlight?"#53a6fa":"#fa5353");
     speed.innerHTML=carspeed;
-    number.innerHTML=carnumber;
+    if (/^\{[0-9a-fA-F]{6}\}/.test(carnumber)) {
+        carnumber = carnumber.slice(8);
+    }
+    number.innerHTML = carnumber;
         
 });
